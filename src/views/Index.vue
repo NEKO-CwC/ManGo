@@ -26,8 +26,8 @@ export default {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -80%);
-    height: 50%;
-    width: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 70%;
   }
 </style>

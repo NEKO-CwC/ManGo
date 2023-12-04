@@ -20,6 +20,28 @@ onMounted(() => {
                 zoom: 17, // 初始化地图级别
                 center: [115.801325, 28.656317], // 初始化地图中心点位置
             });
+            //异步加载工具条插件
+            AMap.plugin("AMap.ToolBar", function () { //异步同时加载多个插件
+                var toolbar = new AMap.ToolBar(); //创建工具条插件实例
+                map.addControl(toolbar); //添加工具条插件到页面
+            });
+            // 异步加载地图组件
+            AMap.plugin(["AMap.Geolocation", "AMap.ElasticMarker"], function () {
+                // 添加定位插件
+                var geolocation = new AMap.Geolocation({
+                    enableHighAccuracy: true, // 是否使用高精度定位，默认为false
+                    timeout: 10000,           // 超过10秒后停止定位，默认：无穷大
+                    maximumAge: 0,            // 定位结果缓存0毫秒，默认：0
+                    convert: true             // 自动将GCJ-02坐标转换成浮点数坐标，默认：true
+                });
+                map.addControl(geolocation);
+                // 添加弹性标记插件
+                var elasticMarker = new AMap.ElasticMarker({
+                    // 在这里配置弹性标记的相关选项
+                });
+                map.add(elasticMarker);
+            });
+
         })
         .catch((e) => {
             console.log(e);
@@ -39,6 +61,6 @@ onUnmounted(() => {
 <style lang="less" scoped>
 #container {
     width: 100%;
-    height: 800px;
+    height: 100%;
 }
 </style>
