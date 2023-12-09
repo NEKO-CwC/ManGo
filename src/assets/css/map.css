@@ -1,0 +1,21 @@
+.map {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../png/Illustration2c.png");
+  overflow: hidden;
+}
+.map .getPos {
+  width: 40vw;
+  height: 20vh;
+}
+.map .posText {
+  width: 40vw;
+  height: 20vh;
+  font-size: 30px;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1hcC5zYXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBRUY7RUFDRTtFQUNBO0VBQ0E7RUFDQSIsImZpbGUiOiJtYXAuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcblxyXG4ubWFwXHJcbiAgd2lkdGg6IDEwMCVcclxuICBoZWlnaHQ6IDEwMCVcclxuICBkaXNwbGF5OiBmbGV4XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtblxyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyXHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlclxyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcIi4uL3BuZy9JbGx1c3RyYXRpb24yYy5wbmdcIilcclxuICBvdmVyZmxvdzogaGlkZGVuXHJcblxyXG4gIC5nZXRQb3NcclxuICAgIHdpZHRoOiA0MHZ3XHJcbiAgICBoZWlnaHQ6IDIwdmhcclxuXHJcbiAgLnBvc1RleHRcclxuICAgIHdpZHRoOiA0MHZ3XHJcbiAgICBoZWlnaHQ6IDIwdmhcclxuICAgIGZvbnQtc2l6ZTogMzBweFxyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGRlclxyXG4iXX0= */

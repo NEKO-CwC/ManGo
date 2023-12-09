@@ -1,0 +1,55 @@
+
+@font-face
+  font-family: 'FZHZGBJW'
+  src: url('../font/FZHZGBJW.TTF') format('truetype')
+
+.headerBar
+  perspective: 10em
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 74px
+  border-radius: 0 0 20px 20px
+  background: #fff
+  z-index: 2
+  animation: headerBar-merge ease-in-out 0.5s
+  box-shadow: #f2f2f2 0 5px 5px
+  transition: all ease-in-out 0.5s
+  @keyframes headerBar-merge
+    0%
+      top: -74px
+    100%
+      top: 0
+
+  .userIcon
+    position: absolute
+    top: 0
+    left: 22px
+    background: url("../svg/map/headIcon-wawa.svg")
+    width: 71px
+    height: 71px
+    border-radius: 50%
+    background-size: contain
+
+  .placeSetContainer
+    position: absolute
+    transform: translate(-50%, -50%)
+    top: 50%
+    left: 50%
+    display: flex
+    align-items: center
+
+    .placeName
+      font-family: FZHZGBJW, serif
+      font-size: 20px
+      color: #657EDD
+
+
+  .wandering
+    position: absolute
+    top: 10px
+    right: 32px
+    width: 42px
+    height: 52px
+    background: url("../svg/map/wandering.svg")
