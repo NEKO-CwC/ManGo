@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Microsoft+YaHei+UI:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-microsoft-yahei-ui: "Microsoft YaHei UI";
+
+  /* Colors */
+  --color-mediumturquoise-100: #76dade;
+  --color-mediumturquoise-200: #68d2d2;
+  --color-mediumturquoise-300: #6cd0cf;
+  --color-mediumturquoise-400: #66d2d1;
+  --color-mediumturquoise-500: #65d3d0;
+  --color-mediumturquoise-600: #67d0d3;
+  --color-mediumturquoise-700: #64d2d1;
+  --color-mediumturquoise-800: #63d1d0;
+  --color-mediumturquoise-900: #62d1cf;
+  --color-navajowhite-100: #ffdda5;
+  --color-navajowhite-200: #ffd593;
+  --color-khaki-100: #ffd98e;
+  --color-khaki-200: #f4c569;
+  --color-sandybrown-100: #f8c46e;
+  --color-sandybrown-200: #fd9856;
+  --color-sandybrown-300: #fe9554;
+  --color-sandybrown-400: #fc9454;
+  --color-sandybrown-500: #f89753;
+  --color-sandybrown-600: #f99750;
+  --color-antiquewhite-100: #f7ecda;
+  --color-antiquewhite-200: #f7ebdb;
+  --color-antiquewhite-300: #f6ead9;
+  --color-antiquewhite-400: #f1e8d9;
+  --color-antiquewhite-500: #f4e5d2;
+  --color-antiquewhite-600: #f4e3d3;
+  --color-antiquewhite-700: #f2e2c9;
+  --color-lightseagreen-100: #51ada8;
+  --color-lightseagreen-200: #3fb6af;
+  --color-lightseagreen-300: #3db5b3;
+  --color-lightseagreen-400: #35b4ad;
+  --color-paleturquoise-100: #bef3f9;
+  --color-paleturquoise-200: #a0fcfc;
+  --color-paleturquoise-300: #b9e9e8;
+  --color-paleturquoise-400: #ace8e8;
+  --color-paleturquoise-500: #87f0fc;
+  --color-darkorange-100: #ff7824;
+  --color-darkorange-200: #fb791a;
+  --color-powderblue: #c1effe;
+  --color-cadetblue: #5fb0af;
+  --color-whitesmoke-100: #f5f5f5;
+  --color-whitesmoke-200: #f1f1f1;
+  --color-lightskyblue: #84a9e0;
+  --color-blanchedalmond: #ffebc5;
+  --color-linen: #f5e9db;
+  --color-orangered: #f23b02;
+  --color-lavenderblush: #fbf1f1;
+  --color-white: #fff;
+
+  /* Border radiuses */
+  --br-126xl: 145px;
+  --br-2xs: 11px;
+  --br-8xl: 27px;
+}
