@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.tag {
+  padding: 8px 25px;
+  width: auto;
+  height: 35px;
+  color: #7F7F7F;
+  font-family: 微软雅黑, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 17.5px;
+  background: #FFFFFF;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRhZy5zYXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0EiLCJmaWxlIjoidGFnLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi50YWdcclxuICBwYWRkaW5nOiA4cHggMjVweFxyXG4gIHdpZHRoOiBhdXRvXHJcbiAgaGVpZ2h0OiAzNXB4XHJcbiAgY29sb3I6ICM3RjdGN0ZcclxuICBmb250LWZhbWlseTog5b6u6L2v6ZuF6buRLCBzZXJpZlxyXG4gIGZvbnQtc2l6ZTogMTZweFxyXG4gIGZvbnQtc3R5bGU6IG5vcm1hbFxyXG4gIGZvbnQtd2VpZ2h0OiA0MDBcclxuICBsaW5lLWhlaWdodDogbm9ybWFsXHJcbiAgYm9yZGVyLXJhZGl1czogMTcuNXB4XHJcbiAgYmFja2dyb3VuZDogI0ZGRkZGRiJdfQ== */
