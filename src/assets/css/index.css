@@ -1,0 +1,262 @@
+.background {
+    background-image: url("image/map.jpg");
+    width: 6991px;
+    height: 12177px;
+    position: relative;
+    z-index: -1; 
+}
+
+.tiyuguang {
+    position: absolute;
+    background-image: url("image/体育馆 (1).svg");
+    left: 6010.114px;
+    top: 2857.8px;
+    width: 475.86px;
+    height: 184.14px;
+    background-size: cover;
+}
+
+.jidianlou {
+    position: absolute;
+    background-image: url("image/机电楼.svg");
+    background-size: cover;
+    left: 2418.9px;
+    top: 2105px;
+    width: 445.335px;
+    height: 330.858px;
+    
+}
+
+.xingonglou {
+    position: absolute;
+    background-image: url("image/信工楼.svg");
+    top: 2465px;
+    left: 2197.8px;
+    width: 464.3683px;
+    height: 308.9779px;
+    background-size: cover;
+}
+
+.baoanlou {
+    position: absolute;
+    background-image: url("image/保安楼.svg");
+    top: 3393px;
+    left: 2758.8px;
+    width: 141.72231px;
+    height: 194.8829px;
+    background-size: cover;
+    z-index: 1;
+
+}
+
+.jiushitang {
+    position: absolute;
+    background-image: url("image/九食堂.svg");
+    top: 3275px;
+    left: 2798.4px;
+    width: 275.244px;
+    height: 191.3668px;
+    background-size: cover;
+
+}
+
+.zhihuakejilou {
+    position: absolute;
+    background-image: url("image/智华科技楼.svg");
+    top: 2268px;
+    left: 2927.1px;
+    Width: 493.7595px;
+    Height: 442.2042px;
+    background-size: cover;
+}
+
+.QicheDianziyuTiedaoZhuangbeiYanjiusuo {
+    position: absolute;
+    background-image: url("image/汽车电子与铁道装备研究所.svg");
+    top: 1480px;
+    left: 3078.9px;
+    width: 303.6099px;
+    height: 245.255px;
+    background-size: cover;
+}
+
+.jiangonglou {
+    position: absolute;
+    background-image: url("image/建工楼.svg");
+    top: 1125.4px;
+    left: 3258.4px;
+    width: 191.69074px;
+    height: 391.5801px;
+    background-size: cover;
+}
+
+.yishitang {
+    position: absolute;
+    background-image: url("image/er一食堂.svg");
+    top: 993.9px;
+    left: 3908.5px;
+    width: 356.058px;
+    height: 280.0515px;    
+    background-size: cover;
+}
+
+.yinyueting {
+    position: absolute;
+    background-image: url("image/音乐厅.svg");
+    top: 2511.3px;
+    left: 5134.8px;
+    width: 284.0821px;
+    height: 196.9537px;
+    background-size: cover;
+}
+
+.liuqishitang {
+    position: absolute;
+    background-image: url("image/六七食堂.svg");
+    top: 330px;
+    left: 5098.5px;
+    width: 249.477px;
+    height: 207.9915px;
+    background-size: cover;
+}
+
+.huiyuanlou {
+    position: absolute;
+    background-image: url("image/慧源楼.svg");
+    top: 1313.4px;
+    left: 3877.5px;
+    width: 547.8691px;
+    height: 358.3899px;
+    background-size: cover;
+}
+
+.kuaidizhan {
+    position: absolute;
+    background-image: url("image/快递站.svg");
+    top: 1000.1px;
+    left:  3540.2px;
+    width: 284.0821px;
+    height: 196.9537px;    
+    background-size: cover;
+}
+
+.xiaoyiyuan {
+    position: absolute;
+    background-image: url("image/校医院.svg");
+    top: 1168.5px;
+    left: 5468.5px;
+    width: 293.4533px;
+    height: 324.1578px;    
+    background-size: cover;
+}
+
+.waijinglou {
+    position: absolute;
+    background-image: url("image/外经楼.svg");
+    top: 1791px;
+    left: 4277.8px;
+    width: 684.9786px;
+    height: 372.2825px;    
+    background-size: cover;
+}
+
+.yishulou {
+    position: absolute;
+    background-image: url("image/艺术楼.svg");
+    top: 2150.1px;
+    left: 5009.1px;
+    width: 406.197px;
+    height: 486.1657px;    
+    background-size: cover;
+}
+
+.wenfalou {
+    position: absolute;
+    background-image: url("image/文法楼.svg");
+    top: 2310px;
+    left: 3944.1px;
+    width: 499.1161px;
+    height: 398.1763px;
+    background-size: cover;
+}
+
+.youyongguanheyumaoqiuguan {
+    background-image: url("image/游泳馆和羽毛球馆.svg");
+    position: absolute;
+    top: 1015px;
+    left: 5788.9px;
+    width: 562.3138px;
+    height: 303.7989px;    
+    background-size: cover;
+}
+
+.xuegonglou {
+    position: absolute;
+    background-image: url("image/学工楼.svg");
+    top: 3880.8px;
+    left: 2765.4px;
+    width: 356.178px;
+    height: 377.4754px;    
+    background-size: cover;
+}
+
+.xiuxxianyundongchang {
+    background-image: url("image/xx运动场.svg");
+    position: absolute;
+    width: 311.2184px;
+    height: 446.763px;
+    top: 438.8px;
+    left: 5759.2px;
+    background-size: cover;
+}
+
+.tianjianyundongc {
+    background-image: url("image/运动场.svg");
+    position: absolute;
+    width: 314.267px;
+    height: 590.4298px;
+    top: 4515.9px;
+    left: 1732.5px;
+    background-size: cover;
+}
+
+.baifangyundongchang {
+    background-image: url("image/运动场 (1).svg");
+    position: absolute;
+    width: 314.267px;
+    height: 590.4298px;
+    top: 4515.9px;
+    left: 1732.5px;
+    background-size: cover;
+}
+
+.sanshitang {
+    position: absolute;
+    background-image: url("image/三食堂.svg");
+    width: 200.2272px;
+    height: 145.6032px;
+    top: 778.8px;
+    left: 5095.2px;
+    background-size: cover;
+}
+
+.jichushiyandalou {
+    position: absolute;
+    background-image: url("image/基础实验大楼.svg");
+    top: 3112.7px;
+    left: 2085.6px;
+    width: calc(157.607px * 3.3);
+    height: calc(94.58px * 3.3);    
+    background-size: cover;
+    z-index: 1;
+}
+
+.lishenglou {
+    position: absolute;
+    background-image: url("image/理生楼.svg");
+    top: 2796px;
+    left:2135.1px;
+    width: 567.6957px;
+    height: 392.3271px;
+    background-size: cover;
+}

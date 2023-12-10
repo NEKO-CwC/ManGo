@@ -1,0 +1,166 @@
+.pushNoteContainer
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 6
+  display: flex
+  flex-direction: column
+  background: #E6F0FF
+  background-size: cover
+  box-shadow: #00000020 -5px 0 5px
+  animation: pushNoteContainer-fadeIn ease-in-out 1s
+
+  @keyframes pushNoteContainer-fadeIn
+    0%
+      transform: translateX(100%)
+    100%
+      transform: translateX(0)
+  @keyframes pushNoteContainer-fadeOut
+    0%
+      transform: translateX(0)
+    100%
+      transform: translateX(100%)
+
+  .bg
+    position: absolute
+    background: url("../../assets/svg/pushNote/bg.svg")
+    z-index: -1
+    width: 100%
+    height: 100%
+    background-size: cover
+
+  .returnContainer
+    width: 100%
+    display: flex
+    justify-content: flex-end
+
+    .pushNoteReturn
+      width: 25px
+      height: 25px
+      background: url("../../assets/svg/pushNote/return.svg")
+      background-size: cover
+      margin-right: 30px
+
+  .addImageContainer
+    position: relative
+    padding-left: 30px
+    display: flex
+    justify-content: flex-start
+
+    .addImage
+      position: relative
+      width: 183px
+      height: 183px
+      background: #FCFBE5
+
+      .logo
+        transform: translate(-50%, -50%)
+        left: 50%
+        top: 50%
+        position: absolute
+        background: url("../../assets/svg/pushNote/add.svg")
+        width: 40px
+        height: 40px
+        background-size: cover
+        border-radius: 4px
+
+      .addImageInput
+        opacity: 0
+        transform: translateX(-50%)
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: transparent
+        background-size: cover
+        border: none
+        outline: none
+        padding: 0
+        margin: 0
+
+  .tagContainer
+    margin-top: 38px
+    width: 100%
+    padding: 0 30px
+    display: flex
+    gap: 15px
+    height: 35px
+
+  .addText
+    flex-grow: 1
+    margin-top: 20px
+    border-top: #7F92D1 solid 1px
+    border-left: none
+    border-bottom: none
+    border-right: none
+    padding: 24px 30px 0 30px
+    color: rgba(25, 53, 163, 0.67)
+    font-family: 微软雅黑, serif
+    font-size: 20px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    background-color: transparent
+    outline: none
+
+    &::placeholder
+      color: rgba(25, 53, 163, 0.67)
+      font-family: 微软雅黑, serif
+
+  .identity
+    width: 100%
+    padding: 0 20px
+    display: flex
+    justify-content: space-between
+
+    .text
+      color: #0028B4
+      font-family: 微软雅黑, serif
+      font-size: 16px
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+
+    .whoCanSee
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      gap: 5px
+
+      .userIcon
+        background: url("../../assets/svg/pushNote/userIcon.svg")
+        background-size: cover
+        width: 25px
+        height: 25px
+
+    .identitySetting
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      gap: 5px
+
+      .settingIcon
+        background: url("../../assets/svg/pushNote/visible.svg")
+        width: 25px
+        height: 20px
+        background-size: cover
+
+  .push
+    margin-top: 25px
+    width: 100%
+    height: 61px
+    padding: 0 30px
+    background: #FFCC67
+    border-radius: 20px
+    color: #FFF
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: FZHZGBJW, serif
+    font-size: 24px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    letter-spacing: 4.8px
+

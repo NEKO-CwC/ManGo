@@ -1,0 +1,261 @@
+@mixin glassBorder
+  border: 1px solid rgba(255, 255, 255, 0.5)
+  border-right: 1px solid rgba(255, 255, 255, 0.2)
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05)
+
+*
+  box-sizing: border-box
+  border: 0
+
+.background
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  //opacity: 0
+  background: #00000025
+  backdrop-filter: blur(50px)
+  animation: backgroundMerge 1s
+
+  @keyframes backgroundMerge
+    0%
+      opacity: 0
+    100%
+      opacity: 1
+
+  @keyframes backgroundHide
+    0%
+      opacity: 1
+    100%
+      opacity: 0
+
+.container
+  width: 75vw
+  height: auto
+  border-radius: 2vw
+  position: absolute
+  left: 12.5vw
+  top: 10%
+  //translate: calc(50% - 12.5vw)
+  display: flex
+  flex-direction: column
+  align-items: center
+  overflow: hidden
+  transition: height ease-in-out 0.5s, width ease-in-out 0.5s
+  @include glassBorder
+  animation: containerMerge 1s
+
+  .loginImg
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+  @keyframes sendEmailEffectX
+    0%
+      left: 37.5vw
+    100%
+      left: 60vw
+
+  @keyframes sendEmailEffectY
+    0%
+      top: 10%
+    100%
+      top: -500px
+
+  @keyframes sendEmailEffectScale
+    0%
+      rotate: 0
+      scale: 1
+      opacity: 1
+    100%
+      rotate: 720deg
+      scale: 0
+      opacity: 0.2
+
+  @keyframes loginSuccessHide
+    0%
+      top: 10%
+      opacity: 1
+    100%
+      top: -500px
+      opacity: 0
+
+
+  @keyframes containerMerge
+    0%
+      top: -500px
+    100%
+      top: 10%
+
+  .emailEffect
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 9
+    //display: none
+
+    .emailTop
+      position: absolute
+      width: 100%
+      height: 60%
+      animation: emailTopMerge 1s
+      z-index: 4
+
+      @keyframes emailTopMerge
+        0%
+          top: -60%
+        100%
+          top: 0
+
+    .emailBottom
+      position: absolute
+      top: 40%
+      width: 100%
+      height: 60%
+      animation: emailBottomMerge 1s
+      z-index: 3
+
+      @keyframes emailBottomMerge
+        0%
+          top: 100%
+        100%
+          top: 40%
+
+    .emailLeftMask
+      width: 50%
+      height: 100%
+      position: absolute
+      animation: emailLeftMaskMerge 1s
+      background-color: #FFFFFF
+      z-index: 2
+
+      @keyframes emailLeftMaskMerge
+        0%
+          left: -50%
+        100%
+          left: 0
+
+    .emailRightMask
+      width: 50%
+      height: 100%
+      left: 50%
+      position: absolute
+      animation: emailRightMaskMerge 1s
+      background-color: #FFFFFF
+      z-index: 1
+
+      @keyframes emailRightMaskMerge
+        0%
+          left: 150%
+        100%
+          left: 50%
+
+
+  .logo
+    width: 80px
+    height: 80px
+    top: 10px
+    //transform: translate(0, 10px)
+    background: url("../../logo.svg") no-repeat center center
+    transition: all ease-in-out 0.5s, transform linear 1s
+    z-index: 10
+
+  .operate
+    width: 80%
+    height: auto
+    margin: 0 10% 0 10%
+    display: flex
+    flex-direction: column
+    transition: all ease-in-out 0.5s
+
+    .operateObj
+      width: 100%
+      height: 0
+      display: flex
+      opacity: 0
+      //margin-bottom: 10px
+      flex-direction: column
+      align-items: flex-start
+      transition: height ease-in-out 0.5s, opacity ease-in-out 0.5s, margin-bottom ease-in-out 0.5s
+
+      .hint
+        height: 20px
+        font-size: 20px
+        font-weight: 400
+        color: #a0a0a0
+        align-content: baseline
+        pointer-events: none
+        transform: translate(20px, 36px)
+
+        transition: all ease-in-out 0.5s
+
+      .hint-above
+        color: #282c34
+        height: 20px
+        font-size: 16px
+        font-weight: 100
+
+      .input
+        width: 100%
+        height: 60px
+        border-radius: 25px
+        /*border: none;*/
+        outline: none
+        padding: 2px 0 0 20px
+        @include glassBorder
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05)
+        font-size: 20px
+        vertical-align: middle
+        color: rgb(50, 50, 50)
+        letter-spacing: 0.07vw
+
+
+    .email
+      display: flex
+      height: 80px
+      opacity: 1
+      margin-bottom: 10px
+
+  .continue
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 80%
+    height: 60px
+    background-color: rgba(255,255,255, 0.2)
+    border-radius: 40px
+    margin: 20px 10% 50px 10%
+    @include glassBorder
+    overflow: hidden
+    transition: all ease-in-out 0.5s
+
+    .text
+      font-size: 30px
+      font-weight: 500
+      color: #444
+      user-select: none
+      transition: 0.5s
+      pointer-events: none
+
+.wave
+  position: absolute
+  border-radius: 50%
+  background: radial-gradient(circle at center, rgba(204,255,255,1), rgba(255, 255, 255, 0.5) )
+  transform: translate(-50%, -50%)
+  width: 100px
+  height: 100px
+  animation: wave 1s infinite
+
+  @keyframes wave
+    0%
+      width: 0
+      height: 0
+      opacity: 1
+    100%
+      width: 1000px
+      height: 1000px
+      opacity: 0
+

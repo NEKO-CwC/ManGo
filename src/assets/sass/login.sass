@@ -1,0 +1,343 @@
+$ip-top: calc(40% - 182.5px - 206.163px + 347px - 316.84px + 30%)
+$ip-left-login: calc(50% - 165.5px + 20px)
+$ip-left-signup: calc(50% - 165.5px + 200px - 20px)
+
+@font-face
+  font-family: '华文琥珀'
+  src: url('../font/华文琥珀.ttf') format('truetype')
+
+@font-face
+  font-family: '华文彩云'
+  src: url('../font/华文彩云.ttf') format('truetype')
+
+@font-face
+  font-family: '微软正黑'
+  src: url('../font/微软正黑.ttf') format('truetype')
+
+@font-face
+  font-family: 'FZHZGBJW'
+  src: url('../font/FZHZGBJW.TTF') format('truetype')
+
+.container
+  perspective: 10em
+  position: absolute
+  width: 100%
+  height: 100%
+  backdrop-filter: blur(50px)
+  transition: all ease-in-out 0.5s
+  z-index: 999
+  //background: linear-gradient(to bottom, #FD945240, #C1EFFE40)
+
+  .ip
+    position: absolute
+    top: $ip-top
+    left: $ip-left-login
+    //transform: translate(-50%, -50%)
+    background: url("../svg/login/jiujiu-mail.svg")
+    width: 131px
+    height: 208px
+    z-index: 2
+    opacity: 1
+    overflow: visible
+    animation: ip-merge cubic-bezier(0.42, 0, 0, 1) 0.5s 1s , hide ease-in-out 1s
+    filter: drop-shadow(5px -2px 5px #999)
+
+  .ip-signup
+    top: $ip-top
+    left: $ip-left-signup
+    background: url("../svg/login/jiujiu-signup.svg")
+    z-index: 0
+
+  .ip-login
+    top: $ip-top
+    left: $ip-left-login
+    background: url("../svg/login/jiujiu-mail.svg")
+    z-index: 2
+
+  .ip-login-password
+    background: url("../svg/login/jiujiu-password.svg")
+
+  .ip-signup-password
+    background: url("../svg/login/jiujiu-signup-password.svg")
+
+  .loginForm
+    position: relative
+    width: 331px
+    height: 365px
+    top: 70%
+    left: 50%
+    transform: translate(-50%, -50%)
+    transition: all ease-in-out 0.5s
+    background: url("../svg/login/loginForm.svg") no-repeat
+    background-size: contain
+    animation: merge 1s ease-in-out
+    filter: drop-shadow(5px 3px 5px #999)
+    z-index: 1
+
+    @keyframes merge
+      0%
+        top: -50%
+      40%
+        opacity: 0
+      100%
+        top: 70%
+        opacity: 1
+
+    @keyframes loginForm-remove
+      0%
+        top: 70%
+        opacity: 1
+      40%
+        opacity: 0
+      100%
+        top: 200%
+
+    //.ip
+    //  position: relative
+    //  width: 129.5px
+    //  height: 206.163px
+    //  flex-shrink: 0
+    //  top: 52px
+    //  background-image: url("../svg/login/ip.svg")
+    //  //z-index: -1
+
+    .loginContainer
+      position: relative
+      bottom: 0
+      width: 100%
+      height: 100%
+      transition: all ease-in-out 0.5s
+      padding: 44px 36px 120px 39px
+      overflow: hidden
+
+      .changeLoginOrSignup
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+
+        .textContainer
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+          width: 145px
+          height: 24px
+
+          .text
+            font-family: '微软雅黑',serif
+            font-size: 20px
+            font-weight: bold
+            color: #657EDD
+
+
+        .sliderContainer
+          margin-top: 4px
+          width: 144px
+          height: 4px
+
+          .slider
+            width: 39px
+            height: 4px
+            border-radius: 2px
+            background: #FFAF52
+            transition: all ease-in-out 0.5s
+
+      .infoInputContainer
+        margin: 25px 0 47px 0
+        width: 200%
+        height: 161px
+        display: flex
+        transition: all cubic-bezier(0.42, 0, 0, 0.99) 1s, opacity cubic-bezier(0, 0.58, 0.09, 1.07) 1s
+
+        .infoInputContainerChildren
+          width: 50%
+          height: 100%
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          align-items: flex-start
+          transition: opacity cubic-bezier(0.42, 0, 0, 1.01) 1s
+
+          .operateObj
+            position: relative
+            width: 100%
+            height: 56px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+
+            .hint
+              pointer-events: none
+              transition: all ease-in-out 0.5s
+              margin-bottom: 4px
+              color: #1CAEA7
+              font-weight: normal
+
+            .hint-inside
+              transform: translate(10px, 30px)
+              font-size: 14px
+
+            .hint-above
+              transform: translate(0, 0)
+              font-size: 10px
+
+            .input
+              width: 100%
+              height: 40px
+              border-radius: 20px
+              background: #77D6D2
+              padding: 0 0 0 15px
+              border: none
+              outline: none
+              font-size: 16px
+              color: #464646
+
+            .captcha
+              width: 56%
+              height: 40px
+              border-radius: 20px
+
+            .getCaptcha
+              position: absolute
+              width: 40%
+              right: 0
+              height: 33px
+              border-radius: 20px
+              background: #FBBA6F
+              bottom: 0
+              font-size: 14px
+              display: flex
+              justify-content: center
+              align-items: center
+              color: #7A4200
+
+            .input:focus
+              outline: none
+
+        .loginInputContainer
+          opacity: 1
+          pointer-events: auto
+
+        .signupInputContainer
+          opacity: 0
+          pointer-events: none
+
+      .verifyButton
+        position: relative
+        width: 212px
+        height: 54px
+        border-radius: 27px
+        background: url("../../assets/svg/login/verifyButton.svg")
+        background-size: cover
+        transform: translateX(-50%)
+        left: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        font-family: FZHZGBJW,serif
+        padding-top: 4px
+        font-size: 24px
+        color: #FFFFFF
+        -webkit-text-stroke-width: 1px
+        -webkit-text-stroke-color: #657EDD
+
+
+
+    @keyframes hide
+      0%
+        opacity: 0
+      100%
+        opacity: 0
+    @keyframes ip-merge
+      0%
+        z-index: 0
+        top: 300px
+        opacity: 0
+      90%
+        z-index: 0
+      100%
+        top: $ip-top
+        opacity: 1
+    @keyframes ip-remove
+      0%
+        opacity: 1
+        top: $ip-top
+      100%
+        opacity: 0
+        top: calc($ip-top + 900px)
+
+    @keyframes moveToSignup
+      0%
+        top: $ip-top
+        background: url("../svg/login/jiujiu-mail.svg")
+        left: $ip-left-login
+        z-index: 2
+      1%
+        z-index: 0
+
+      30%
+        top: calc($ip-top + 200px)
+        left: $ip-left-login
+        background: url("../svg/login/jiujiu-mail.svg")
+        z-index: 0
+
+      70%
+        top: calc($ip-top + 200px)
+        left: $ip-left-signup
+        background: url("../svg/login/jiujiu-signup.svg")
+        z-index: 0
+
+      100%
+        top: $ip-top
+        background: url("../svg/login/jiujiu-signup.svg")
+        left: $ip-left-signup
+        z-index: 0
+
+    @keyframes moveToLogin
+      0%
+        top: $ip-top
+        left: $ip-left-signup
+        background: url("../svg/login/jiujiu-signup.svg")
+        z-index: 0
+
+      30%
+        top: calc($ip-top + 200px)
+        left: $ip-left-signup
+        background: url("../svg/login/jiujiu-signup.svg")
+        z-index: 0
+
+      70%
+        top: calc($ip-top + 200px)
+        left: $ip-left-login
+        background: url("../svg/login/jiujiu-mail.svg")
+        z-index: 0
+
+      99%
+        z-index: 0
+
+      100%
+        top: $ip-top
+        left: $ip-left-login
+        background: url("../svg/login/jiujiu-mail.svg")
+        z-index: 2
+
+.wave
+  position: absolute
+  border-radius: 50%
+  background: radial-gradient(circle at center, rgba(204,255,255,1), rgba(255, 255, 255, 0.5) )
+  transform: translate(-50%, -50%)
+  width: 100px
+  height: 100px
+  animation: wave 1s infinite
+
+  @keyframes wave
+    0%
+      width: 0
+      height: 0
+      opacity: 1
+    100%
+      width: 1000px
+      height: 1000px
+      opacity: 0
+
